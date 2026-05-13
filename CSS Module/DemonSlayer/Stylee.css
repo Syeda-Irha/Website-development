@@ -1,0 +1,48 @@
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(148, 177, 228);
+    color: rgb(54, 150, 228);
+}
+h1{
+    color: rgb(46, 61, 156);
+}
+/*Attribute selector*/
+a{
+    color: rgb(37, 19, 103);
+    text-decoration: none;
+}
+/*Child selector*/
+ul > li{
+    font-weight: bold;
+}
+/*Sibling selector*/
+h1 + p{
+    background-color: rgb(70, 65, 216);
+    padding: 10px;
+    border-radius: 5px;
+}
+/* :hover Pseudo-class*/
+ul li:hover{
+    color: rgb(37, 99, 111);
+}
+/* :nth-child(n) Pseudo-class*/
+ul li :nth-child(3){
+    background-color: rgb(47, 61, 92);
+}
+/* :not(selector) Pseudo-class*/
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+/* ::before Pseudo-element */
+ul li::before {
+    content: "";
+}
+/* ::after Pseudo-element*/
+a::after{
+    content: "";
+}
+/* ::first-letter Pseudo-element*/
+p::first-letter{
+    font-size: 200%;
+    color:rgb(49, 80, 147)
+}
