@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasty Bites</title>
+  <style>
+    body{
+        font-family: Arial, sans-serif; background: #fff8f0; padding: 30px;
+    }
+    h1{
+        color: rgb(113, 42, 163); text-align: center;
+    }
+    h2{
+        color: rgb(171, 52, 161); margin-top: 30px;
+    }
+    p{
+        color: rgb(96, 96, 197);
+    }
+
+    .menu-item{
+        background: #ffe8d6;
+        border: 2px solid rgba(222, 207, 0, 0.937);
+        padding: 10px 20px;
+        margin: 8px 0;
+        width: 200px;
+    }
+.compare-wrap { 
+    display: flex; gap: 30px; margin-top: 10px; }
+.compare-col {
+     flex: 1; }
+.compare-col p {
+     font-size: 12px; color: #a0522d; margin-bottom: 6px; }
+.special-badge {
+   background: #e3a883;
+   color: rgb(190, 82, 180);
+   padding : 10px 20px;
+   margin : 8px 0;
+   width : 200px;
+   position : relative;
+   left : 40px;
+ }
+ .reserved{
+    border: 2px dashed #e6bc02;
+padding: 10px 20px;
+width: 200px;
+margin: 8px 0;
+color: #914ca2;
+font-size: 12px;
+ }
+  </style>
+</head>
+<body>
+
+  <h1>&#127829; Tasty Bites Menu</h1>
+
+  <h2>Static Positioning (default)</h2>
+  <p>Elements sit in normal flow — one after another, top to bottom.</p>
+  <div class="menu-item">&#127829; Pizza — $8.99</div>
+  <div class="menu-item">&#127828; Burger — $6.99</div>
+  <div class="menu-item">&#127839; Sandwich — $5.49</div>
+
+  <h2>Relative Positioning</h2>
+  <p>The element shifts from where it normally sits. Its original space stays reserved.</p>
+  <div class="compare-wrap">
+    <div class="compare-col">
+      <p>Without relative:</p>
+      <div class="menu-item">&#127829; Pizza — $8.99</div>
+      <div class="menu-item" style="background:#a977b1;color:white;">&#11088; Chef's Special!</div>
+      <div class="menu-item">&#127839; Sandwich — $5.49</div>
+    </div>
+    <div class="compare-col">
+      <p>With position: relative; left: 40px:</p>
+      <div class="menu-item">&#127829; Pizza — $8.99</div>
+      <div class="reserved">&#8592; original space reserved</div>
+      <div class="special-badge">&#11088; Chef's Special!</div>
+      <div class="menu-item">&#127839; Sandwich — $5.49</div>
+    </div>
+  </div>
+
+</body>
+</html>
