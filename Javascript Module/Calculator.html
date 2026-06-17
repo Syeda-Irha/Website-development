@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Guide in JavaScript</title>
+    </head>
+    <body>
+        <h1 id="myH"></h1>
+        <p id="myP"></p>
+        <p id="result"></p>
+        <p id="demo"></p>
+        <p id="Subtract"></p>
+        <p id="Divide"></p>
+        <script>
+            //Heading
+            document.getElementById("myH").innerHTML = "JavaScript Comments";
+            //Paragraph
+            document.getElementById("myP").innerHTML = "My first paragraph.";
+
+            var num1 = 2;
+            var num2 = 1;
+            var sum = num1 + num2;
+            document.getElementById("result").innerHTML=
+            "The total sum is:" + sum;
+
+            //*use +,-,* / operators*/
+            var x = 5;
+            var y = 6;
+            var z = x * y;
+            document.getElementById("demo").innerHTML = z;
+
+            var a = 3;
+            var b = 2;
+            var c = a - b;
+            document.getElementById("Subtract").innerHTML = c;
+
+            var s = 8
+            var t = 2
+            var f = s / t;
+            document.getElementById("Divide").innerHTML = f;
+        </script>
+    </body>
+</html>
