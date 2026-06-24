@@ -6,6 +6,7 @@
     <body>
         <h2>String Methods</h2>
         <p>Basic methods</p>
+        <p id="Demo"></p>
         <script>
             var str = "AmAzInG";
             document.write(str.toUpperCase());
@@ -18,6 +19,14 @@
             var patt = new RegExp("about");
             var res = patt.test(str);
             document.write(res);
+
+            var fruits = ["Apple", "Mango", "Grapes" , "Berry" , "Watermelon" , "Pineapple"]
+            var text = ""
+            var i;
+            for (i = 0; i < fruits.length; i++) {
+            text += fruits[i] + "<br>";
+            }
+            document.getElementById("Demo").innerHTML = text;
         </script>
     </body>
 </html>
