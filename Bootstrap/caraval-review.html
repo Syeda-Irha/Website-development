@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Caraval Review</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- FIXED: Repaired Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://bootstrapcdn.com">
+    <!-- FIXED: Repaired Google Font link for 'Cinzel' -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url('Background.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #120904;
+            color: #fff;
+            font-family: serif;
+        }
+        .review-container {
+            margin-top: 60px;
+            background: rgba(25, 15, 10, 0.55) !important; 
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 2px solid #f3ce7a;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(243, 206, 122, 0.25);
+        }
+        .review-title {
+            font-family: 'Cinzel', serif;
+            color: #f3ce7a;
+            text-shadow: 0 0 15px rgba(243, 206, 122, 0.6);
+            font-size: 3.5rem;
+        }
+        .stars {
+            font-size: 2rem;
+            letter-spacing: 5px;
+        }
+        .back-btn {
+            background-color: #f3ce7a !important;
+            border: 1px solid #f3ce7a !important;
+            border-radius: 50px !important; /* Perfectly round capsule shape */
+            color: #120904 !important; 
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            display: inline-block; 
+            padding: 12px 35px !important; /* Thick cute padding */
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(243, 206, 122, 0.4);
+            text-decoration: none !important;
+        }
+        .back-btn:hover {
+            background-color: #ffe6a3 !important; 
+            box-shadow: 0 0 25px rgba(243, 206, 122, 0.8);
+            transform: scale(1.05); 
+            color: #120904 !important;
+            text-decoration: none !important; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 review-container text-center">
+                <h1 class="review-title mb-2">Caraval</h1>
+                
+                <div class="stars mb-4">⭐⭐⭐⭐<span style="opacity: 0.3;">⭐</span></div>
+                
+                <p class="lead text-justify" style="line-height: 1.8; color: #e0e0e0;">
+                    "Remember, it's only a game..." This book completely sweeps you off your feet into a world where you can't tell what is real and what is just performance. The atmosphere is lush, dark, and beautifully whimsical. Scarlett and Tella's sisterly bond drives a high-stakes, magical treasure hunt that keeps you guessing until the absolute final page. A fantastic fantasy adventure!
+                </p>
+                
+                <hr style="border-top: 1px solid #f3ce7a; opacity: 0.3;" class="my-4">
+                
+                <!-- FIXED: Stripped conflicting bootstrap button classes & embedded history pop back engine -->
+                <a href="#" onclick="history.back(); return false;" class="back-btn">Back to Bookshelf</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

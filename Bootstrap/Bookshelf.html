@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <title>My 5-Star Bookshelf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- FIXED: Full Google Font Link for the magical 'Cinzel' font -->
+    <link href="https://googleapis.com" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('Background.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #120904; /* Dark midnight bronze fallback color */
+        }
+
+        .bookshelf-title {
+            font-family: 'Cinzel', serif;
+            color: #f3ce7a; 
+            text-shadow: 0px 0px 15px rgba(243, 206, 122, 0.6); 
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* This centers your shelf on the screen */
+        .bookshelf-row {
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .review-btn {
+            background-color: rgb(110, 65, 183) !important;
+            border: none !important;
+            border-radius: 25px !important; 
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            padding: 10px 20px !important;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+            box-shadow: 0 4px 10px rgba(110, 65, 183, 0.3); 
+        }
+
+        .review-btn:hover {
+            background-color: rgb(135, 85, 215) !important; 
+            transform: translateY(-3px) scale(1.02); 
+            box-shadow: 0 0 20px rgba(160, 100, 245, 0.8),   
+                        0 0 35px rgba(110, 65, 183, 0.4); 
+        }  
+        /* Custom glass theme for your cards */
+.card {
+    background: rgba(25, 15, 10, 0.45) !important; /* Semi-transparent dark base */
+    backdrop-filter: blur(8px);                    /* Blurs the stardust behind the card */
+    -webkit-backdrop-filter: blur(8px);           /* Safari support */
+    border: 1px solid rgba(243, 206, 122, 0.25) !important; /* Soft gold tinted border */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);   /* Deep soft shadows under the floating cards */
+    color: #ffffff;                                /* Forces text inside cards to turn crisp white */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Prepares a smooth hover animation */
+}
+
+/* Optional Magic: Makes the cards lift up gracefully when hovered! */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px 0 rgba(243, 206, 122, 0.2);
+    border: 1px solid rgba(243, 206, 122, 0.6) !important; /* Border glows brighter on hover */
+}
+
+/* Fixes the text colors on the transparent background */
+.card-title {
+    color: #f3ce7a; /* Turns the book titles gold to match the main header */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #e0e0e0; /* Off-white for easy reading on the transparent dark card */
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1 class="bookshelf-title">My Book Shelf</h1>
+
+    <div class="container">
+        <!-- The row wrapper begins here -->
+        <div class="row bookshelf-row">
+
+            <!-- BOOK CARD 1: CARAVAL -->
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Caraval!.png" alt="Caraval Cover">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Caraval</h5>
+                            <p class="card-text">
+                                <strong>Genre:</strong> High Fantasy/Fiction<br>
+                                <em>Remember, it's all a game...</em>
+                            </p>
+                        </div>
+                        <a href="caraval-review.html" class="btn btn-primary review-btn mt-2">Press for review</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOOK CARD 2: LEGENDARY -->
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Legendary.png" alt="Legendary Cover">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Legendary</h5>
+                            <p class="card-text">
+                                <strong>Genre:</strong> High Fantasy/Fiction<br>
+                                <em>A game of hearts and crown fates...</em>
+                            </p>
+                        </div>
+                        <a href="legendary-review.html" class="btn btn-primary review-btn mt-2">Press for review</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIXED: Moved Finale inside the row wrapper so it stays side-by-side! -->
+            <!-- BOOK CARD 3: FINALE -->
+            <div class="col-md-4 col-sm-6 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Finale.png" alt="Finale Cover">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Finale</h5>
+                            <p class="card-text">
+                                <strong>Genre:</strong> High Fantasy/Fiction<br>
+                                <em>Every game must come to an end...</em>
+                            </p>
+                        </div>
+                        <a href="finale-review.html" class="btn btn-primary review-btn mt-2">Press for review</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of Row tag is safely placed at the very end now! -->
+    </div> <!-- End of Container -->
+
+
+    <!-- Bootstrap Javascript tags -->
+    <script src="https://googleapis.com"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
